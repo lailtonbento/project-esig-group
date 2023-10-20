@@ -1,0 +1,22 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    defer-datasource-initialization: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/Task
+    username: postgres
+    password: 123
+  sql:
+    init:
+      mode: always
+      data-locations:
+
+springfox:
+  documentation:
+    auto-startup: true
+    enabled: true
+    swagger-ui:
+      enabled: true
