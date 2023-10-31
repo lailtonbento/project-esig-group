@@ -29,7 +29,7 @@ public class Task {
     public Prioridade prioridade;
     public String situacao;
     public boolean done = false;
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     public Date deadline = new Date();
 
 
